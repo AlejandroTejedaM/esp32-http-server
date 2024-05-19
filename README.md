@@ -1,19 +1,20 @@
-# ESP32 HTTP Server Example
+# Simulación de Control de Toma de Agua con ESP32
 
-ESP32 web server example: control 2 LEDs from a web page hosted on the ESP32.
+Este proyecto simula el control de una toma de agua utilizando un ESP32 como servidor HTTP. Desde una página web alojada en el ESP32, se puede controlar el estado de la toma de agua.
 
-Use [Wokwi for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode) to simulate this project.
+## Construcción
 
-## Building
+Este es un proyecto de [PlatformIO](https://platformio.org). Para compilarlo, [instala PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html), y luego ejecuta el siguiente comando:
 
-This is a [PlatformIO](https://platformio.org) project. To build it, [install PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html), and then run the following command:
-
-```
+```bash
 pio run
 ```
+## Simulación
 
-## Simulating
+Para simular este proyecto, instala Wokwi para VS Code. Abre el directorio del proyecto en Visual Studio Code, presiona F1 y selecciona "Wokwi: Start Simulator".
 
-To simulate this project, install [Wokwi for VS Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode). Open the project directory in Visual Studio Code, press **F1** and select "Wokwi: Start Simulator".
+## Ejecución del Proyecto
+Configuración inicial: Asegúrate de que el ESP32 esté conectado a la red WiFi especificada en ssid y password.
+Simulación: Inicia la simulación utilizando Wokwi para VS Code.
 
-Once the simulation is running, open http://localhost:8180 in your web browser to interact with the simulated HTTP server.
+## La API de ejemplo aun no es publica (WARNING)

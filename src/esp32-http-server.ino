@@ -2,13 +2,14 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 #include <ESP32Servo.h>
+#include <time.h> // Necesario para usar setenv y tzset
 
 //Claves para conectarse a la red WiFi
 const char *ssid = "Wokwi-GUEST";
 const char *password = "";
 const int channel = 11;
 //URL de la API especificando el Id de la toma de agua
-const String apiUrl = "http://192.168.1.11:8120/toma_agua/TMA_3728";
+const String apiUrl = "http://192.168.1.3:8120/toma_agua/TMA_4082";
 //Objeto HTTPClient para realizar peticiones HTTP
 HTTPClient http;
 //Objeto Servo para controlar el servo
